@@ -47,7 +47,7 @@ export const getAllItemsHandler = async (event) => {
 
   // All log statements are written to CloudWatch
   console.info(
-    `response changed from: ${event.path} statusCode: ${response.statusCode} body: ${response.body}`,
+    `response from: ${event.path} statusCode: ${response.statusCode} body: ${response.body}`,
   );
   return response;
 };
